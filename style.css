@@ -192,6 +192,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   font-size: 24px;
+  text-align: justify;
   margin: 20px 0;
 }
 
@@ -203,13 +204,13 @@ body {
   padding: 30px 0 40px;
 }
 
-.popular-block,
 .new-block {
-  padding: 55px 0 10px;
+  padding: 55px 0 60px;
 }
 
 .popular-block {
   background-color: #fff;
+  padding: 55px 0 15px;
 }
 
 .product {
@@ -270,5 +271,85 @@ body {
   cursor: pointer;
   background-color: #005b42;
   color: #fff;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 80px 0;
+}
+
+.footer {
+  background-color: #e8e8e8;
+}
+
+.footer-block h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.footer__warning {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.footer__logo {
+  text-align: end;
+  display: block;
+}
+
+.warning__text {
+  font-weight: 300;
+  font-size: 18px;
+  text-align: justify;
+  margin: 20px 0;
+}
+
+.categories__item {
+  color: #000;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.categories__link {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px transparent solid;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.categories__link:hover {
+  border-bottom: 1px #000 solid;
+}
+
+.contacts__item {
+  color: #000;
+  font-size: 22px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.contacts__item span {
+  font-weight: 400;
+}
+
+.contacts__link {
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 2px transparent solid;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contacts__link:hover {
+  border-bottom: 2px #000 solid;
 }
 /*# sourceMappingURL=style.css.map */
