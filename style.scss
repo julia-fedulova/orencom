@@ -2,7 +2,7 @@ $another-green: #2b7670;
 $green: #005b42;
 $pistachio: #d2e4d6;
 $light-blue: #e8f3f5;
-$light-green: #e5ede5;
+$light-green: #ecf2f0;
 
 ul,
 ol {
@@ -41,7 +41,7 @@ body {
 }
 
 .header {
-  background-color: $light-blue;
+  background-color: $light-green;
   &__heading {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -121,12 +121,19 @@ body {
     background-color: #fff;
     filter: drop-shadow(0px 10px 10px #f0efef);
   }
+  &__nav {
+    ul li:hover .nav-list__submenu {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 }
 
 .nav-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   &__burger-menu {
     color: $green;
     //border-bottom: 2px solid transparent;
@@ -144,11 +151,27 @@ body {
       //color: #000;
     }
   }
+  &__submenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 57px;
+    padding: 20px 40px;
+    left: 0;
+    max-width: 250px;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+    background-color: #fff;
+    border: 2px solid #d2e4d6;
+  }
   &__link {
     text-decoration: none;
     color: #000;
     position: relative;
     transition: 0.3s;
+    &_green {
+      color: $green;
+    }
     span:before {
       position: absolute;
       width: 100%;
@@ -169,6 +192,22 @@ body {
         left: 16px;
         top: 16px;
       }
+    }
+  }
+}
+
+.submenu {
+  &__item {
+    margin-top: 5px;
+  }
+  &__link {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px transparent solid;
+    transition: 0.3s;
+    font-weight: 300;
+    &:hover {
+      border-bottom: 1px #000 solid;
     }
   }
 }
