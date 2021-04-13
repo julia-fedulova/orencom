@@ -60,6 +60,7 @@ body {
       border: 1px solid #000;
       outline: none;
       background: #fff;
+      color: $green;
       width: 100%;
       height: 52px;
       padding: 0 45px 0 15px;
@@ -85,7 +86,7 @@ body {
         font-family: "Font Awesome 5 Free";
         font-size: 22px;
         font-weight: 600;
-        color: #959595;
+        color: $green;
       }
     }
   }
@@ -154,6 +155,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-size: 30px;
     font-weight: 500;
+    color: $green;
     text-transform: uppercase;
     margin-bottom: 25px;
   }
@@ -206,8 +208,8 @@ body {
   }
   &__country {
     font-size: 18px;
-    color: $green;
     margin-bottom: 15px;
+    color: $green;
   }
   &__price {
     font-size: 28px;
@@ -219,10 +221,11 @@ body {
     font-family: "Oswald", sans-serif;
     font-size: 22px;
     font-weight: 500;
+    color: $green;
     background-color: transparent;
     border: 1px #000 solid;
     text-transform: uppercase;
-    padding: 7px 24px;
+    padding: 7px 72px;
     margin: 25px 0;
     transition: 0.4s;
     outline: none;
@@ -241,12 +244,13 @@ body {
 }
 
 .footer {
-  background-color: #e8e8e8;
+  background-color: #fff;
   &-block {
     h2 {
       font-size: 30px;
       font-weight: 500;
       margin-bottom: 15px;
+      color: $green;
     }
   }
   &__warning {
