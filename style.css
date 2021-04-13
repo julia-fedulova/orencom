@@ -41,7 +41,7 @@ body {
 }
 
 .header {
-  background-color: #f0f0f0;
+  background-color: #e8f3f5;
 }
 
 .header__heading {
@@ -64,6 +64,7 @@ body {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   border: 1px solid #000;
+  color: #005b42;
   outline: none;
   background: #fff;
   color: #005b42;
@@ -171,10 +172,34 @@ body {
 .nav-list__link {
   text-decoration: none;
   color: #000;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-list__link span:before {
+  position: absolute;
+  width: 100%;
+  height: 64%;
+  z-index: -1;
+  background: #d2e4d6;
+  left: 11px;
+  top: 11px;
+  content: "";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .nav-list__link:hover {
   color: #005b42;
+}
+
+.nav-list__link:hover span:before {
+  width: 110%;
+  height: 74%;
+  background: #e5ede5;
+  left: 16px;
+  top: 16px;
 }
 
 .page-section {
@@ -223,6 +248,7 @@ body {
 .product__img {
   display: block;
   margin: 0 auto;
+  width: 261px;
 }
 
 .product__description {
@@ -248,11 +274,27 @@ body {
 }
 
 .product__price {
-  font-size: 28px;
+  display: inline-block;
+  font-size: 30px;
+  z-index: 1;
+  position: relative;
+}
+
+.product__price:before {
+  position: absolute;
+  width: 100%;
+  height: 64%;
+  z-index: -1;
+  background: #d2e4d6;
+  left: 11px;
+  top: 16px;
+  content: "";
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .product__price span {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .product__button {
@@ -291,10 +333,24 @@ body {
 }
 
 .footer-block h2 {
+  display: inline-block;
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
-  color: #005b42;
+  color: #000;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-block h2 span:before {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  z-index: -1;
+  background: #d2e4d6;
+  left: 13px;
+  top: 13px;
+  content: "";
 }
 
 .footer__warning {
