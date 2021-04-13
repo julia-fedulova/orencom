@@ -151,7 +151,7 @@ body {
 }
 
 .nav-list__burger-menu {
-  color: #2b7670;
+  color: #005b42;
 }
 
 .nav-list__burger-menu:before {
@@ -159,7 +159,7 @@ body {
   font-family: "Font Awesome 5 Free";
   font-size: 22px;
   font-weight: 600;
-  color: #2b7670;
+  color: #005b42;
   margin-right: 10px;
 }
 
@@ -173,7 +173,7 @@ body {
 }
 
 .nav-list__link:hover {
-  color: #2b7670;
+  color: #005b42;
 }
 
 .page-section {
@@ -232,13 +232,15 @@ body {
 }
 
 .product__category {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
+  color: #005b42;
   text-transform: uppercase;
 }
 
 .product__country {
-  font-size: 16px;
+  font-size: 18px;
+  color: #005b42;
   margin-bottom: 15px;
 }
 
@@ -257,7 +259,16 @@ body {
   background-color: transparent;
   border: 1px #000 solid;
   text-transform: uppercase;
-  padding: 5px 24px;
+  padding: 7px 24px;
   margin: 25px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  outline: none;
+}
+
+.product__button:hover {
+  cursor: pointer;
+  background-color: #005b42;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

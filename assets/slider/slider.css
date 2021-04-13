@@ -12,12 +12,17 @@
 .slider__item {
   flex: 0 0 25%;
   max-width: 25%;
+  transition: transform 0.3s ease;
 }
 
 .slider__item-wrapper {
   margin: 0 25px;
   background-color: #fff;
   height: 550px;
+}
+
+.slider__item:hover {
+  transform: scale(1.04);
 }
 
 .slider__control {

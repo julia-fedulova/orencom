@@ -1,3 +1,6 @@
+$another-green: #2b7670;
+$green: #005b42;
+
 ul,
 ol {
   margin: 0;
@@ -120,19 +123,19 @@ body {
   justify-content: space-between;
   align-items: center;
   &__burger-menu {
-    color: #2b7670;
+    color: $green;
     //border-bottom: 2px solid transparent;
     &:before {
       content: "\f0c9";
       font-family: "Font Awesome 5 Free";
       font-size: 22px;
       font-weight: 600;
-      color: #2b7670;
+      color: $green;
       margin-right: 10px;
     }
     &:hover {
       cursor: pointer;
-      //border-bottom: 2px solid #2b7670;
+      //border-bottom: 2px solid $green;
       //color: #000;
     }
   }
@@ -140,7 +143,7 @@ body {
     text-decoration: none;
     color: #000;
     &:hover {
-      color: #2b7670;
+      color: $green;
     }
   }
 }
@@ -195,12 +198,14 @@ body {
     margin: 15px 0;
   }
   &__category {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
+    color: $green;
     text-transform: uppercase;
   }
   &__country {
-    font-size: 16px;
+    font-size: 18px;
+    color: $green;
     margin-bottom: 15px;
   }
   &__price {
@@ -216,7 +221,14 @@ body {
     background-color: transparent;
     border: 1px #000 solid;
     text-transform: uppercase;
-    padding: 5px 24px;
+    padding: 7px 24px;
     margin: 25px 0;
+    transition: 0.4s;
+    outline: none;
+    &:hover {
+      cursor: pointer;
+      background-color: $green;
+      color: #fff;
+    }
   }
 }
