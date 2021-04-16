@@ -1,0 +1,131 @@
+.catalog {
+  background-color: #f7f7f7;
+  padding: 10px 0 40px;
+}
+
+.catalog__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog__heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #005b42;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.catalog__sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.catalog__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__filters {
+  width: 25%;
+}
+
+.catalog__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75%;
+}
+
+.sorting__text {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.sorting__select {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  text-transform: lowercase;
+}
+
+.sorting__select option {
+  font-weight: 300;
+}
+
+.product {
+  width: calc(33.333% - 45px);
+  background-color: #fff;
+  margin: 10px 7.5px 20px;
+  padding: 20px 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.product:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
+.product__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.product__img {
+  width: 100%;
+}
+
+.product__title {
+  margin-bottom: 0;
+}
+
+.product__count {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.product__button {
+  margin-bottom: 0;
+}
+
+.nav__link {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  border-bottom: 1px transparent solid;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  border-bottom: 1px #000 solid;
+}
+
+.nav__delimiter {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #000;
+  margin: 0 15px;
+}
+
+.filters__form {
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 20px 15px;
+}
+/*# sourceMappingURL=catalog.css.map */

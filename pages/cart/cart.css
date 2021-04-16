@@ -1,0 +1,142 @@
+.cart {
+  background-color: #f7f7f7;
+  padding: 10px 0 40px;
+}
+
+.cart__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart__heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #005b42;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.cart__cards {
+  background-color: #fff;
+  max-width: 850px;
+}
+
+.nav__link {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+  border-bottom: 1px transparent solid;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav__link:hover {
+  border-bottom: 1px #000 solid;
+}
+
+.nav__delimiter {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #000;
+  margin: 0 15px;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+  min-height: 200px;
+}
+
+.product:last-child {
+  border-bottom: none;
+}
+
+.product__img {
+  display: block;
+  width: 150px;
+}
+
+.product__description {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.product__title {
+  font-size: 28px;
+  font-weight: 400;
+  color: #005b42;
+  margin: 0 0 3px;
+}
+
+.product__price {
+  font-size: 24px;
+}
+
+.product__price::before {
+  width: 0;
+}
+
+.product__buttons {
+  margin-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__button {
+  font-size: 22px;
+  color: #000;
+  background-color: #e3e3e3;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  padding: 7px 45px;
+  margin: 0 30px;
+}
+
+.product__button:hover {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.product__amount {
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+  margin: 0 15px;
+}
+
+.inc,
+.dec {
+  font-size: 20px;
+  color: #000;
+  background-color: #e3e3e3;
+  border: 1px solid transparent;
+  width: 37px;
+  height: 37px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.inc:hover,
+.dec:hover {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+/*# sourceMappingURL=cart.css.map */

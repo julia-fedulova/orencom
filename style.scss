@@ -58,7 +58,7 @@ body {
     }
     input {
       font-size: 22px;
-      font-family: "Oswald", sans-serif;
+      font-family: "Roboto Condensed", sans-serif;
       font-weight: 400;
       border: 1px solid #000;
       color: $green;
@@ -178,8 +178,8 @@ body {
       height: 64%;
       z-index: -1;
       background: $pistachio;
-      left: 11px;
-      top: 11px;
+      left: 12px;
+      top: 15px;
       content: "";
       transition: 0.3s;
     }
@@ -399,4 +399,100 @@ body {
       border-bottom: 2px #000 solid;
     }
   }
+}
+
+#overlay,
+#overlay-stop,
+#overlay-customer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transition: 0.35s ease-in-out;
+  z-index: 999;
+  animation: fade 0.6s;
+  overflow: auto;
+  &.open {
+    opacity: 1;
+  }
+}
+
+.popup {
+  text-align: center;
+  top: 25%;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  margin: auto;
+  width: 85%;
+  min-width: 320px;
+  max-width: 600px;
+  position: absolute;
+  padding: 30px 25px;
+  border: 1px solid #383838;
+  background: #fefefe;
+  z-index: 1000;
+  border-radius: 4px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.22), 0 19px 60px rgba(0, 0, 0, 0.3);
+  animation: fade 0.6s;
+  opacity: 0;
+  transition: 0.35s ease-in-out;
+  &.open {
+    opacity: 1;
+  }
+  &__heading {
+    font-size: 40px;
+    font-weight: 400;
+    color: $green;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  &__button-group {
+    display: flex;
+    justify-content: center;
+    &_column {
+      flex-direction: column;
+    }
+  }
+  &__button {
+    font-family: "Oswald", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: $green;
+    background-color: transparent;
+    border: 1px #000 solid;
+    text-transform: uppercase;
+    padding: 7px 40px;
+    margin: 30px 30px 0;
+    transition: 0.4s;
+    outline: none;
+    &:hover {
+      cursor: pointer;
+      background-color: $green;
+      color: #fff;
+    }
+    &_red {
+      color: #b80000;
+      &:hover {
+        background-color: #b80000;
+      }
+    }
+  }
+}
+
+.button-entity {
+  text-decoration: none;
+}
+
+.button-individual,
+.button-entity {
+  color: #000;
 }
