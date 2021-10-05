@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<link rel="stylesheet" href="normalize.css" />-->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="pages/login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Oswald:wght@300;400&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <title>Оренком</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrap">
+        <div class="header-container">
+          <div>
+            <a href="index.html" class="header__logo"
+              ><img src="assets/logo.png" alt="Торговый дом ОРЕНКОМ"
+            /></a>
+            <h1 class="header__heading">Торговый дом ОРЕНКОМ</h1>
+          </div>
+          <div class="header__search">
+            <form>
+              <input type="search" placeholder="Найти товар на сайте" />
+              <button type="submit"></button>
+            </form>
+          </div>
+          <div class="header__links">
+            <a class="header__link" href="pages/cart/cart.html">
+              <img src="assets/svg/cart.svg" alt="Корзина" />
+              <span>Корзина</span>
+            </a>
+            <button type="button" class="header__link login-button">
+              <img src="assets/svg/user.svg" alt="Вход" />
+              <span>Вход</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header__menu">
+        <div class="wrap">
+          <nav class="header__nav">
+            <ul class="header__nav-list nav-list">
+              <li class="nav-list__burger-menu">
+                <a class="nav-list__link nav-list__link_green" href=""
+                  >Все товары</a
+                >
+                <ul class="nav-list__submenu submenu">
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="pages/catalog/catalog.html"
+                      ><span>Вино</span></a
+                    >
+                  </li>
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="pages/catalog/catalog.html"
+                      ><span></span>Шампанское и игристое</a
+                    >
+                  </li>
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="pages/catalog/catalog.html"
+                      ><span>Виски</span></a
+                    >
+                  </li>
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="pages/catalog/catalog.html"
+                      ><span>Водка</span></a
+                    >
+                  </li>
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="pages/catalog/catalog.html"
+                      ><span>Коньяк</span></a
+                    >
+                  </li>
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="pages/catalog/catalog.html"
+                      ><span>Текила</span></a
+                    >
+                  </li>
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="pages/catalog/catalog.html"
+                      ><span>Ром</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav-list__link" href="pages/catalog/catalog.html"
+                  ><span>Вино</span></a
+                >
+              </li>
+              <li>
+                <a class="nav-list__link" href="pages/catalog/catalog.html"
+                  ><span></span>Шампанское и игристое</a
+                >
+              </li>
+              <li>
+                <a class="nav-list__link" href="pages/catalog/catalog.html"
+                  ><span>Виски</span></a
+                >
+              </li>
+              <li>
+                <a class="nav-list__link" href="pages/catalog/catalog.html"
+                  ><span>Водка</span></a
+                >
+              </li>
+              <li>
+                <a class="nav-list__link" href="pages/catalog/catalog.html"
+                  ><span>Коньяк</span></a
+                >
+              </li>
+              <li>
+                <a class="nav-list__link" href="pages/catalog/catalog.html"
+                  ><span>Текила</span></a
+                >
+              </li>
+              <li>
+                <a class="nav-list__link" href="pages/catalog/catalog.html"
+                  ><span>Ром</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="company-block page-section">
+        <div class="wrap">
+          <h2 class="page-section__heading">О компании</h2>
+          <p class="page-section__description">
+            Созданная пятнадцать лет назад компания «Торговый дом «Оренком»
+            уверенно лидирует в сфере реализации, продвижения и дистрибуции
+            алкогольных напитков в рыночной среде Оренбуржья. Пятнадцать лет –
+            немалый срок для бизнеса, и за эти годы было достигнуто многое.
+          </p>
+          <p class="page-section__description">
+            Постоянное сотрудничество со многими клиентами на взаимовыгодной
+            основе длится уже довольно долго. Нас ценят за стабильность качества
+            продукции и разумный подход к ценообразованию.
+          </p>
+          <p class="page-section__description">
+            Большой ассортимент продукции, поставляемой ТД «Оренком», делает
+            компанию желанным партнёром для всех, кто получает свою прибыль от
+            розничной торговли алкоголем. Напитки различных сортов и крепости,
+            вина и коньяки, бальзам, и многие другие качественные образцы
+            продукции – отличное наполнение для прилавков, как небольших
+            магазинчиков, так и огромных маркетов.
+          </p>
+          <p class="page-section__description">
+            Клиентская база «Торгового дома «Оренком» уже сейчас насчитывает
+            более восьмисот точек продажи напитков в Оренбурге и области и
+            продолжает стремительно увеличиваться.
+          </p>
+        </div>
+      </section>
+      <section class="benefits-block page-section">
+        <div class="wrap">
+          <h2 class="page-section__heading">Наши преимущества</h2>
+          <p class="page-section__description">
+            Торговый дом «Оренком» является официальным дистрибьютером многих
+            производителей спиртных напитков, как слабоалкогольных, так и
+            крепких, что делает его удобным партнёром для совместного бизнеса по
+            реализации алкогольной продукции.
+          </p>
+          <p class="page-section__description">
+            Ответственное и добросовестное отношение к ведению дел,
+            индивидуальный подход к клиентам, неизменное качество представляемой
+            ТД «Оренком» продукции являются несомненными преимуществами этой
+            компании.
+          </p>
+        </div>
+      </section>
+      <section class="popular-block page-section">
+        <div class="wrap">
+          <h2 class="page-section__heading">Популярные товары</h2>
+          <div class="slider">
+            <div class="slider__wrapper first-slider">
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        1. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        2. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        3. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        4. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        5. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        6. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        7. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        8. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a
+              class="slider__control slider__control_left"
+              href="#"
+              role="button"
+            ></a>
+            <a
+              class="slider__control slider__control_right slider__control_show"
+              href="#"
+              role="button"
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="new-block page-section">
+        <div class="wrap">
+          <h2 class="page-section__heading">Новинки</h2>
+          <div class="slider">
+            <div class="slider__wrapper second-slider">
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        1. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        2. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        3. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        4. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        5. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        6. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        7. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__item-wrapper">
+                  <a class="page-section__card product" href="">
+                    <img
+                      class="product__img"
+                      src="assets/image.png"
+                      alt="Изображение товара"
+                    />
+                    <div class="product__description">
+                      <h3 class="product__title">
+                        8. Glenfiddich 12 Years Old, 0.5 л
+                      </h3>
+                      <p class="product__category">Виски</p>
+                      <p class="product__country">Шотландия</p>
+                      <p class="product__price">
+                        3350
+                        <span> руб.</span>
+                      </p>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a
+              class="slider__control slider__control_left"
+              href="#"
+              role="button"
+            ></a>
+            <a
+              class="slider__control slider__control_right slider__control_show"
+              href="#"
+              role="button"
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-container">
+          <div class="footer__categories categories footer-block">
+            <h2><span>Категории</span></h2>
+            <ul class="categories__list">
+              <li class="contacts__item">
+                <a class="categories__link" href="">Вино</a>
+              </li>
+              <li class="contacts__item">
+                <a class="categories__link" href="">Шампанское и игристое</a>
+              </li>
+              <li class="contacts__item">
+                <a class="categories__link" href="">Виски</a>
+              </li>
+              <li class="contacts__item">
+                <a class="categories__link" href="">Водка</a>
+              </li>
+              <li class="contacts__item">
+                <a class="categories__link" href="">Коньяк</a>
+              </li>
+              <li class="contacts__item">
+                <a class="categories__link" href="">Текила</a>
+              </li>
+              <li class="contacts__item">
+                <a class="categories__link" href="">Ром</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts contacts footer-block">
+            <h2><span>Контакты</span></h2>
+            <ul class="contacts__list">
+              <li class="contacts__item"><span>ООО "ТД "Оренком"</span></li>
+              <li class="contacts__item">
+                Адрес: <span>460023, г.Оренбург, ул. Магистральная, 1</span>
+              </li>
+              <li class="contacts__item">
+                Тел.:
+                <a class="contacts__link" href="tel:+73532306246"
+                  >(3532) 306-246</a
+                >
+              </li>
+              <li class="contacts__item">
+                E-mail:
+                <a class="contacts__link" href="mailto:info@orencom.org"
+                  >info@orencom.org</a
+                >
+              </li>
+            </ul>
+            <h2><span>Информация</span></h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">О доставке</li>
+              <li class="contacts__item">Об оплате</li>
+            </ul>
+          </div>
+          <div class="footer__warning warning footer-block">
+            <a href="index.html" class="footer__logo"
+              ><img src="assets/logo.png" alt="Торговый дом ОРЕНКОМ"
+            /></a>
+            <p class="warning__text">
+              Данный сайт является интернет-витриной, соблюдающей все правила и
+              условия ФЗ РФ N171 О госрегулировании алкогольного рынка от
+              22.11.1995 (ред. от 31.12.2014) а также правила продажи товаров
+              дистанционным способом, утверждённым Постановлением Правительства
+              РФ от 27.09.2007 №612. Качество всего ассортимента подтверждено
+              сертификатами и наличием специальных акцизных марок.
+            </p>
+            <p class="warning__text">
+              МИНЗДРАВ ПРЕДУПРЕЖДАЕТ: ЧРЕЗМЕРНОЕ УПОТРЕБЛЕНИЕ АЛКОГОЛЯ ВРЕДИТ
+              ВАШЕМУ ЗДОРОВЬЮ
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="login-overlay">
+      <div class="login-form">
+        <div class="login-form__toggle"></div>
+        <div class="login-form__panel one">
+          <div class="login-form__header">
+            <h1>Войти в аккаунт</h1>
+          </div>
+          <div class="login-form__content">
+            <form>
+              <div class="login-form__group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="password">Пароль</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label class="login-form__remember">
+                  <input type="checkbox" />Запомнить меня?</label
+                ><a class="login-form__recovery" href="#">Забыли пароль?</a>
+              </div>
+              <div class="login-form__group">
+                <button type="submit">Войти</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="login-form__panel two">
+          <div class="login-form__header">
+            <h1>Зарегистрироваться</h1>
+          </div>
+          <div class="login-form__content">
+            <form>
+              <div class="login-form__group">
+                <label for="username">Имя</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="birthdate">Email</label>
+                <input
+                  type="date"
+                  id="birthdate"
+                  name="birthdate"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="registeremail"
+                  name="email"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="password">Пароль</label>
+                <input
+                  type="password"
+                  id="registerPassword"
+                  name="password"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="cpassword">Подтвердить пароль</label>
+                <input
+                  type="password"
+                  id="cpassword"
+                  name="cpassword"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <button type="submit">Зарегистрироваться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="confirm-overlay">
+      <div class="popup confirm-popup">
+        <h2 class="popup__heading">Вам уже исполнилось 18&nbspлет?</h2>
+        <p class="popup__text">
+          Информация на сайте предназначена для людей старше 18&nbspлет.
+        </p>
+        <div class="popup__button-group">
+          <button class="popup__button popup__button_green">Да</button>
+          <button class="popup__button popup__button_red">Нет</button>
+        </div>
+      </div>
+    </div>
+    <div class="stop-overlay">
+      <div class="popup stop-popup">
+        <h2 class="popup__heading">Доступ на сайт ограничен</h2>
+        <p class="popup__text">
+          Информация на сайте предназначена для людей старше 18 лет.
+        </p>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="pages/login.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".first-slider").slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        });
+        $(".second-slider").slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        });
+      });
+    </script>
+  </body>
+</html>
