@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<link rel="stylesheet" href="normalize.css" />-->
     <link rel="stylesheet" href="../../style.css" />
-    <link rel="stylesheet" href="../../assets/slider/slider.css" />
     <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="../login.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Oswald:wght@300;400&family=Roboto:wght@300;400;500&display=swap"
@@ -42,10 +42,10 @@
               <img src="../../assets/svg/cart.svg" alt="Корзина" />
               <span>Корзина</span>
             </a>
-            <a class="header__link" href="">
+            <button type="button" class="header__link login-button">
               <img src="../../assets/svg/user.svg" alt="Вход" />
               <span>Вход</span>
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -446,6 +446,109 @@
         </div>
       </div>
     </footer>
-    <script src="../../assets/slider/slider.js"></script>
+    <div class="login-overlay">
+      <div class="login-form">
+        <div class="login-form__toggle"></div>
+        <div class="login-form__panel one">
+          <div class="login-form__header">
+            <h1>Войти в аккаунт</h1>
+          </div>
+          <div class="login-form__content">
+            <form>
+              <div class="login-form__group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="password">Пароль</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label class="login-form__remember">
+                  <input type="checkbox" />Запомнить меня?</label
+                ><a class="login-form__recovery" href="#">Забыли пароль?</a>
+              </div>
+              <div class="login-form__group">
+                <button type="submit">Войти</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="login-form__panel two">
+          <div class="login-form__header">
+            <h1>Зарегистрироваться</h1>
+          </div>
+          <div class="login-form__content">
+            <form>
+              <div class="login-form__group">
+                <label for="username">Имя</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="birthdate">Email</label>
+                <input
+                  type="date"
+                  id="birthdate"
+                  name="birthdate"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="registeremail"
+                  name="email"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="password">Пароль</label>
+                <input
+                  type="password"
+                  id="registerPassword"
+                  name="password"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="cpassword">Подтвердить пароль</label>
+                <input
+                  type="password"
+                  id="cpassword"
+                  name="cpassword"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <button type="submit">Зарегистрироваться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="../login.js"></script>
   </body>
 </html>

@@ -7,6 +7,7 @@
     <!--<link rel="stylesheet" href="normalize.css" />-->
     <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="../login.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Oswald:wght@300;400&family=Roboto:wght@300;400;500&display=swap"
@@ -37,14 +38,14 @@
             </form>
           </div>
           <div class="header__links">
-            <a class="header__link" href="">
+            <a class="header__link" href="../cart/cart.html">
               <img src="../../assets/svg/cart.svg" alt="Корзина" />
               <span>Корзина</span>
             </a>
-            <a class="header__link" href="">
+            <button type="button" class="header__link login-button">
               <img src="../../assets/svg/user.svg" alt="Вход" />
               <span>Вход</span>
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -143,54 +144,89 @@
             <a class="nav__link" href="cart.html">Корзина</a>
           </div>
           <h2 class="cart__heading">Корзина</h2>
-          <div class="cart__cards">
-            <div class="cart__card product">
-              <img class="product__img" src="../../assets/image.png" alt="" />
-              <div class="product__description">
-                <h3 class="product__title">Glenfiddich 12 Years Old, 0.5 л</h3>
-                <p class="product__price">
-                  3350
-                  <span> руб.</span>
-                </p>
-                <div class="product__buttons">
-                  <button class="dec">-</button>
-                  <input id="count1" class="product__amount" value="1" />
-                  <button class="inc">+</button>
+          <div class="cart__content">
+            <div class="cart__cards">
+              <div class="cart__card product">
+                <img class="product__img" src="../../assets/image.png" alt="" />
+                <div class="product__description">
+                  <h3 class="product__title">
+                    <a href="../card/card.html"
+                      >Glenfiddich 12 Years Old, 0.5 л</a
+                    >
+                  </h3>
+                  <p class="product__price">
+                    3350
+                    <span> руб.</span>
+                  </p>
+                  <div class="product__buttons">
+                    <button class="dec">-</button>
+                    <input id="count1" class="product__amount" value="1" />
+                    <button class="inc">+</button>
+                  </div>
                 </div>
+                <button class="product__button primary-button">Удалить</button>
               </div>
-              <button class="product__button">Удалить</button>
+              <div class="cart__card product">
+                <img class="product__img" src="../../assets/image.png" alt="" />
+                <div class="product__description">
+                  <h3 class="product__title">
+                    <a href="../card/card.html"
+                      >Glenfiddich 12 Years Old, 0.5 л</a
+                    >
+                  </h3>
+                  <p class="product__price">
+                    3350
+                    <span> руб.</span>
+                  </p>
+                  <div class="product__buttons">
+                    <button class="dec">-</button>
+                    <input id="count2" class="product__amount" value="1" />
+                    <button class="inc">+</button>
+                  </div>
+                </div>
+                <button class="product__button primary-button">Удалить</button>
+              </div>
+              <div class="cart__card product">
+                <img class="product__img" src="../../assets/image.png" alt="" />
+                <div class="product__description">
+                  <h3 class="product__title">
+                    <a href="../card/card.html"
+                      >Glenfiddich 12 Years Old, 0.5 л</a
+                    >
+                  </h3>
+                  <p class="product__price">
+                    3350
+                    <span> руб.</span>
+                  </p>
+                  <div class="product__buttons">
+                    <button class="dec">-</button>
+                    <input id="count3" class="product__amount" value="1" />
+                    <button class="inc">+</button>
+                  </div>
+                </div>
+                <button class="product__button primary-button">Удалить</button>
+              </div>
             </div>
-            <div class="cart__card product">
-              <img class="product__img" src="../../assets/image.png" alt="" />
-              <div class="product__description">
-                <h3 class="product__title">Glenfiddich 12 Years Old, 0.5 л</h3>
-                <p class="product__price">
-                  3350
-                  <span> руб.</span>
-                </p>
-                <div class="product__buttons">
-                  <button class="dec">-</button>
-                  <input id="count2" class="product__amount" value="1" />
-                  <button class="inc">+</button>
-                </div>
+            <div class="cart__total total">
+              <p class="total__text total__sum"><span>Итого: </span>959 руб.</p>
+              <p class="total__text">Промокод:</p>
+              <div class="total__promo">
+                <input type="text" />
+                <button class="total__promo-button">Применить</button>
               </div>
-              <button class="product__button">Удалить</button>
-            </div>
-            <div class="cart__card product">
-              <img class="product__img" src="../../assets/image.png" alt="" />
-              <div class="product__description">
-                <h3 class="product__title">Glenfiddich 12 Years Old, 0.5 л</h3>
-                <p class="product__price">
-                  3350
-                  <span> руб.</span>
-                </p>
-                <div class="product__buttons">
-                  <button class="dec">-</button>
-                  <input id="count3" class="product__amount" value="1" />
-                  <button class="inc">+</button>
-                </div>
+              <p class="total__text">
+                Сумма после применения скидок: <span>900 руб.</span>
+              </p>
+              <div class="total__buttons">
+                <a
+                  href="../../index.html"
+                  class="primary-button total__continue-button"
+                  >Продолжить покупки</a
+                >
+                <a href="" class="primary-button total__checkout-button"
+                  >Оформление заказа</a
+                >
               </div>
-              <button class="product__button">Удалить</button>
             </div>
           </div>
         </div>
@@ -266,41 +302,110 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript">
-      let pluses = document.querySelectorAll(".inc");
-      let minuses = document.querySelectorAll(".dec");
-
-      pluses.forEach((plus) => {
-        plus.addEventListener("click", function (e) {
-          e.preventDefault();
-          let input = this.closest("div").querySelector("input");
-          let amount = parseInt(input.value);
-
-          if (amount < 99) {
-            amount++;
-          } else {
-            amount = 99;
-          }
-
-          input.value = amount;
-        });
-      });
-
-      minuses.forEach((minus) => {
-        minus.addEventListener("click", function (e) {
-          e.preventDefault();
-          let input = this.closest("div").querySelector("input");
-          let amount = parseInt(input.value);
-
-          if (amount > 1) {
-            amount--;
-          } else {
-            amount = 0;
-          }
-
-          input.value = amount;
-        });
-      });
-    </script>
+    <div class="login-overlay">
+      <div class="login-form">
+        <div class="login-form__toggle"></div>
+        <div class="login-form__panel one">
+          <div class="login-form__header">
+            <h1>Войти в аккаунт</h1>
+          </div>
+          <div class="login-form__content">
+            <form>
+              <div class="login-form__group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="password">Пароль</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label class="login-form__remember">
+                  <input type="checkbox" />Запомнить меня?</label
+                ><a class="login-form__recovery" href="#">Забыли пароль?</a>
+              </div>
+              <div class="login-form__group">
+                <button type="submit">Войти</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="login-form__panel two">
+          <div class="login-form__header">
+            <h1>Зарегистрироваться</h1>
+          </div>
+          <div class="login-form__content">
+            <form>
+              <div class="login-form__group">
+                <label for="username">Имя</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="birthdate">Email</label>
+                <input
+                  type="date"
+                  id="birthdate"
+                  name="birthdate"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="registeremail"
+                  name="email"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="password">Пароль</label>
+                <input
+                  type="password"
+                  id="registerPassword"
+                  name="password"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="cpassword">Подтвердить пароль</label>
+                <input
+                  type="password"
+                  id="cpassword"
+                  name="cpassword"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <button type="submit">Зарегистрироваться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="../login.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

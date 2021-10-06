@@ -49,12 +49,7 @@
   width: 75%;
 }
 
-.sorting__text {
-  font-size: 20px;
-  margin-right: 5px;
-}
-
-.sorting__select {
+.primary-select {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -64,8 +59,13 @@
   text-transform: lowercase;
 }
 
-.sorting__select option {
+.primary-select option {
   font-weight: 300;
+}
+
+.sorting__text {
+  font-size: 20px;
+  margin-right: 5px;
 }
 
 .product {
@@ -128,5 +128,100 @@
   background-color: #fff;
   margin-top: 10px;
   padding: 20px 15px;
+}
+
+.filters__button {
+  padding: 7px 35px;
+  margin: 20px 0;
+}
+
+.filters__select {
+  width: 95%;
+}
+
+.slider {
+  position: relative;
+  z-index: 1;
+  height: 10px;
+  margin: 0 15px;
+}
+
+.slider > .track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #c6aee7;
+}
+
+.slider > .range {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #6200ee;
+}
+
+.slider > .thumb {
+  position: absolute;
+  z-index: 3;
+  width: 30px;
+  height: 30px;
+  background-color: #6200ee;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0 rgba(98, 0, 238, 0.1);
+          box-shadow: 0 0 0 0 rgba(98, 0, 238, 0.1);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.slider > .thumb.left {
+  left: 25%;
+  -webkit-transform: translate(-15px, -10px);
+          transform: translate(-15px, -10px);
+}
+
+.slider > .thumb.right {
+  right: 25%;
+  -webkit-transform: translate(15px, -10px);
+          transform: translate(15px, -10px);
+}
+
+.slider > .thumb.hover {
+  -webkit-box-shadow: 0 0 0 20px rgba(98, 0, 238, 0.1);
+          box-shadow: 0 0 0 20px rgba(98, 0, 238, 0.1);
+}
+
+.slider > .thumb.active {
+  -webkit-box-shadow: 0 0 0 40px rgba(98, 0, 238, 0.2);
+          box-shadow: 0 0 0 40px rgba(98, 0, 238, 0.2);
+}
+
+input[type="range"] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  -webkit-appearance: none;
 }
 /*# sourceMappingURL=catalog.css.map */

@@ -33,29 +33,3 @@ buttonNo.addEventListener("click", (event) => {
         stopPopup.classList.add("open");
     }, 350);
 }); */
-
-const loginButton = document.querySelector(".login-button");
-const loginOverlay = document.querySelector(".login-overlay");
-const loginForm = document.querySelector(".login-form");
-
-loginButton.addEventListener("click", () => {
-    loginOverlay.style.display = "block";
-    setTimeout(function () {
-        loginOverlay.classList.add("open");
-        setTimeout(function () {
-            loginForm.classList.add("open");
-        }, 350);
-    }, 250);
-});
-
-loginOverlay.addEventListener("mousedown", (event) => {
-    if (event.target === loginOverlay) {
-        setTimeout(function () {
-            setTimeout(function () {
-                loginOverlay.style.display = "none";
-            }, 350);
-        loginForm.classList.remove("open"); 
-        loginOverlay.classList.remove("open"); 
-        }, 350);
-    }
-})

@@ -25,12 +25,39 @@ body {
   font-size: 22px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
+  @media (max-width: 1599px) {
+    font-size: 20px;
+  }
 }
 
 .wrap {
   max-width: 1250px;
   margin: 0 auto;
   padding: 0 25px;
+  @media (max-width: 1599px) and (min-width: 480px) {
+    padding: 0 35px;
+  }
+}
+
+.primary-button {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #005b42;
+  background-color: transparent;
+  border: 1px #000 solid;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  outline: none;
+  @media (max-width: 1599px) {
+    font-size: 20px;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $green;
+    color: #fff;
+  }
 }
 
 .header-container {
@@ -38,6 +65,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 25px 0;
+  @media (max-width: 480px) {
+    padding: 15px 0;
+  }
 }
 
 .logo-img {
@@ -61,6 +91,12 @@ body {
       position: relative;
       width: 500px;
       margin: 0 auto;
+      @media (max-width: 1279px) {
+        width: 435px;
+      }
+      @media (max-width: 1023px) {
+        display: none;
+      }
     }
     input {
       font-size: 22px;
@@ -72,8 +108,14 @@ body {
       background: #fff;
       color: $green;
       width: 100%;
-      height: 45px;
-      padding: 0 45px 0 15px;
+      padding: 10px 45px 10px 15px;
+      @media (max-width: 1599px) {
+        font-size: 20px;
+      }
+      @media (max-width: 1279px) {
+        font-size: 18px;
+        padding: 7px 45px 7px 15px;
+      }
     }
     input[type="search"]::-ms-clear {
       display: none;
@@ -85,17 +127,24 @@ body {
       border: none;
       outline: none;
       background: transparent;
-      height: 42px;
-      width: 42px;
+      height: 44px;
+      width: 44px;
       position: absolute;
       right: 2px;
       cursor: pointer;
+      @media (max-width: 1279px) {
+        height: 38px;
+        width: 38px;
+      }
       &:before {
         content: "\f002";
         font-family: "Font Awesome 5 Free";
         font-size: 22px;
         font-weight: 600;
         color: $green;
+        @media (max-width: 1279px) {
+          font-size: 20px;
+        }
       }
     }
   }
@@ -112,6 +161,9 @@ body {
       margin-left: 12px;
       border-bottom: 2px transparent solid;
       transition: 0.3s;
+      @media (max-width: 480px) {
+        display: none;
+      }
       &:hover {
         border-bottom: 2px #000 solid;
       }
@@ -126,12 +178,21 @@ body {
       font-size: 22px;
       font-family: "Oswald", sans-serif;
       font-weight: 400;
+      @media (max-width: 1599px) {
+        font-size: 20px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
   &__menu {
     padding: 25px 0;
     background-color: #fff;
     filter: drop-shadow(0px 10px 10px #f0efef);
+    @media (max-width: 768px) {
+      padding: 15px 0;
+    }
   }
   &__nav {
     ul li:hover .nav-list__submenu {
@@ -146,7 +207,10 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  &__burger-menu {
+  @media (max-width: 768px) {
+    display: none;
+  }
+  &__dropdown-menu {
     color: $green;
     //border-bottom: 2px solid transparent;
     &:before {
@@ -156,6 +220,9 @@ body {
       font-weight: 600;
       color: $green;
       margin-right: 10px;
+      @media (max-width: 1599px) {
+        font-size: 20px;
+      }
     }
     &:hover {
       cursor: pointer;
@@ -194,6 +261,9 @@ body {
       top: 15px;
       content: "";
       transition: 0.3s;
+      @media (max-width: 1023px) {
+        display: none;
+      }
     }
     &:hover {
       color: $green;
@@ -224,6 +294,28 @@ body {
   }
 }
 
+.burger-menu {
+  &__button {
+    display: none;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    vertical-align: middle;
+    border: none;
+    background-color: transparent;
+    color: $green;
+    @media (max-width: 768px) {
+      display: block;
+    }
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
+  }
+  &__list {
+    display: none;
+  }
+}
+
 .page-section {
   background-color: #f7f7f7;
   &__heading {
@@ -233,6 +325,9 @@ body {
     color: $green;
     text-transform: uppercase;
     margin-bottom: 25px;
+    @media (max-width: 1599px) {
+      font-size: 26px;
+    }
   }
   &__description {
     font-family: "Roboto Condensed", sans-serif;
@@ -240,11 +335,18 @@ body {
     font-size: 24px;
     text-align: justify;
     margin: 20px 0;
+    @media (max-width: 1599px) {
+      font-size: 20px;
+      margin: 15px 0;
+    }
   }
 }
 
 .company-block {
   padding: 90px 0 10px;
+  @media (max-width: 480px) {
+    padding-top: 45px;
+  }
 }
 
 .benefits-block {
@@ -300,11 +402,16 @@ body {
   transform: translateY(-50%);
   background: #005b42;
   z-index: 1;
+  @media (max-width: 768px) {
+    width: 35px;
+    height: 40px;
+  }
   &:hover {
     color: #fff;
     text-decoration: none;
     outline: 0;
     opacity: 0.8;
+    cursor: pointer;
   }
 }
 
@@ -339,32 +446,43 @@ body {
   &__img {
     display: block;
     margin: 0 auto;
-    width: 261px;
+    width: 100%;
   }
   &__description {
-    // FIX: отступы не паддингом
-    padding: 0 10px;
+    padding: 0 10px 1px;
   }
   &__title {
     font-size: 22px;
     margin: 15px 0;
+    @media (max-width: 1599px) {
+      font-size: 20px;
+    }
   }
   &__category {
     font-size: 18px;
     font-weight: 400;
     color: $green;
     text-transform: uppercase;
+    @media (max-width: 1599px) {
+      font-size: 16px;
+    }
   }
   &__country {
     font-size: 18px;
     margin-bottom: 15px;
     color: $green;
+    @media (max-width: 1599px) {
+      font-size: 16px;
+    }
   }
   &__price {
     display: inline-block;
     font-size: 30px;
     z-index: 1;
     position: relative;
+    @media (max-width: 1599px) {
+      font-size: 26px;
+    }
     &:before {
       position: absolute;
       width: 100%;
@@ -378,24 +496,20 @@ body {
     }
     span {
       font-size: 24px;
+      @media (max-width: 1599px) {
+        font-size: 22px;
+      }
     }
   }
   &__button {
-    font-family: "Oswald", sans-serif;
-    font-size: 22px;
-    font-weight: 500;
-    color: $green;
-    background-color: transparent;
-    border: 1px #000 solid;
-    text-transform: uppercase;
+    display: block;
     padding: 7px 72px;
-    margin: 25px 0;
-    transition: 0.4s;
-    outline: none;
-    &:hover {
-      cursor: pointer;
-      background-color: $green;
-      color: #fff;
+    margin: 25px auto;
+    @media (max-width: 1599px) {
+      padding: 7px 55px;
+    }
+    @media (max-width: 768px) {
+      padding: 5px 25px;
     }
   }
 }
@@ -417,6 +531,9 @@ body {
       color: #000;
       position: relative;
       z-index: 1;
+      @media (max-width: 1599px) {
+        font-size: 26px;
+      }
       span:before {
         position: absolute;
         width: 100%;
@@ -444,6 +561,9 @@ body {
   font-size: 18px;
   text-align: justify;
   margin: 20px 0;
+  @media (max-width: 1599px) {
+    font-size: 16px;
+  }
 }
 
 .categories {
@@ -452,6 +572,9 @@ body {
     font-size: 22px;
     font-weight: 300;
     margin-top: 5px;
+    @media (max-width: 1599px) {
+      font-size: 20px;
+    }
   }
   &__link {
     color: #000;
@@ -470,6 +593,9 @@ body {
     font-size: 22px;
     font-weight: 300;
     margin-top: 5px;
+    @media (max-width: 1599px) {
+      font-size: 20px;
+    }
     span {
       font-weight: 400;
     }
@@ -533,6 +659,9 @@ body {
     font-weight: 400;
     color: $green;
     margin-bottom: 15px;
+    @media (max-width: 1599px) {
+      font-size: 34px;
+    }
   }
   &__text {
     font-family: "Roboto Condensed", sans-serif;
@@ -547,22 +676,8 @@ body {
     }
   }
   &__button {
-    font-family: "Oswald", sans-serif;
-    font-size: 22px;
-    font-weight: 500;
-    color: $green;
-    background-color: transparent;
-    border: 1px #000 solid;
-    text-transform: uppercase;
     padding: 7px 40px;
     margin: 30px 30px 0;
-    transition: 0.4s;
-    outline: none;
-    &:hover {
-      cursor: pointer;
-      background-color: $green;
-      color: #fff;
-    }
     &_red {
       color: #b80000;
       &:hover {

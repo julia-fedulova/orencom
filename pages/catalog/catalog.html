@@ -7,6 +7,7 @@
     <!--<link rel="stylesheet" href="normalize.css" />-->
     <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="catalog.css" />
+    <link rel="stylesheet" href="../login.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Oswald:wght@300;400&family=Roboto:wght@300;400;500&display=swap"
@@ -41,10 +42,10 @@
               <img src="../../assets/svg/cart.svg" alt="Корзина" />
               <span>Корзина</span>
             </a>
-            <a class="header__link" href="">
+            <button type="button" class="header__link login-button">
               <img src="../../assets/svg/user.svg" alt="Вход" />
               <span>Вход</span>
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -58,52 +59,76 @@
                 >
                 <ul class="nav-list__submenu submenu">
                   <li class="submenu__item">
-                    <a class="submenu__link" href=""><span>Вино</span></a>
+                    <a class="submenu__link" href="catalog.html"
+                      ><span>Вино</span></a
+                    >
                   </li>
                   <li class="submenu__item">
-                    <a class="submenu__link" href=""
+                    <a class="submenu__link" href="catalog.html"
                       ><span></span>Шампанское и игристое</a
                     >
                   </li>
                   <li class="submenu__item">
-                    <a class="submenu__link" href=""><span>Виски</span></a>
+                    <a class="submenu__link" href="catalog.html"
+                      ><span>Виски</span></a
+                    >
                   </li>
                   <li class="submenu__item">
-                    <a class="submenu__link" href=""><span>Водка</span></a>
+                    <a class="submenu__link" href="catalog.html"
+                      ><span>Водка</span></a
+                    >
                   </li>
                   <li class="submenu__item">
-                    <a class="submenu__link" href=""><span>Коньяк</span></a>
+                    <a class="submenu__link" href="catalog.html"
+                      ><span>Коньяк</span></a
+                    >
                   </li>
                   <li class="submenu__item">
-                    <a class="submenu__link" href=""><span>Текила</span></a>
+                    <a class="submenu__link" href="catalog.html"
+                      ><span>Текила</span></a
+                    >
                   </li>
                   <li class="submenu__item">
-                    <a class="submenu__link" href=""><span>Ром</span></a>
+                    <a class="submenu__link" href="catalog.html"
+                      ><span>Ром</span></a
+                    >
                   </li>
                 </ul>
               </li>
               <li>
-                <a class="nav-list__link" href=""><span>Вино</span></a>
+                <a class="nav-list__link" href="catalog.html"
+                  ><span>Вино</span></a
+                >
               </li>
               <li>
-                <a class="nav-list__link" href=""
+                <a class="nav-list__link" href="catalog.html"
                   ><span></span>Шампанское и игристое</a
                 >
               </li>
               <li>
-                <a class="nav-list__link" href=""><span>Виски</span></a>
+                <a class="nav-list__link" href="catalog.html"
+                  ><span>Виски</span></a
+                >
               </li>
               <li>
-                <a class="nav-list__link" href=""><span>Водка</span></a>
+                <a class="nav-list__link" href="catalog.html"
+                  ><span>Водка</span></a
+                >
               </li>
               <li>
-                <a class="nav-list__link" href=""><span>Коньяк</span></a>
+                <a class="nav-list__link" href="catalog.html"
+                  ><span>Коньяк</span></a
+                >
               </li>
               <li>
-                <a class="nav-list__link" href=""><span>Текила</span></a>
+                <a class="nav-list__link" href="catalog.html"
+                  ><span>Текила</span></a
+                >
               </li>
               <li>
-                <a class="nav-list__link" href=""><span>Ром</span></a>
+                <a class="nav-list__link" href="catalog.html"
+                  ><span>Ром</span></a
+                >
               </li>
             </ul>
           </nav>
@@ -122,9 +147,8 @@
           <div class="catalog__sorting sorting">
             <p class="sorting__text">сортировать по</p>
             <select
-              class="sorting__select"
+              class="primary-select sorting__select"
               name="product-sorting"
-              class="filter-sort"
             >
               <option value="popular">Популярности</option>
               <option value="price">Цене по возрастанию</option>
@@ -139,6 +163,9 @@
                 <p>Объем</p>
                 <p>Производитель</p>
                 <p>Страна</p>
+                <button type="button" class="primary-button filters__button">
+                  Показать
+                </button>
               </form>
             </div>
             <div class="catalog__items">
@@ -151,16 +178,18 @@
                   />
                   <div class="product__description">
                     <h3 class="product__title">
-                      Glenfiddich 12 Years Old, 0.5 л
+                      Glenfiddich 12 Years Old, 0.5&nbsp;л
                     </h3>
-                    <p class="product__count">3 шт.</p>
+                    <p class="product__count">197 шт.</p>
                     <p class="product__category">Виски</p>
                     <p class="product__country">Шотландия</p>
                     <p class="product__price">
                       3350
                       <span> руб.</span>
                     </p>
-                    <button class="product__button">В корзину</button>
+                    <button class="product__button primary-button">
+                      В корзину
+                    </button>
                   </div>
                 </a>
               </div>
@@ -173,16 +202,18 @@
                   />
                   <div class="product__description">
                     <h3 class="product__title">
-                      Glenfiddich 12 Years Old, 0.5 л
+                      Glenfiddich 12 Years Old, 0.5&nbsp;л
                     </h3>
-                    <p class="product__count">3 шт.</p>
+                    <p class="product__count">197 шт.</p>
                     <p class="product__category">Виски</p>
                     <p class="product__country">Шотландия</p>
                     <p class="product__price">
                       3350
                       <span> руб.</span>
                     </p>
-                    <button class="product__button">В корзину</button>
+                    <button class="product__button primary-button">
+                      В корзину
+                    </button>
                   </div>
                 </a>
               </div>
@@ -195,16 +226,18 @@
                   />
                   <div class="product__description">
                     <h3 class="product__title">
-                      Glenfiddich 12 Years Old, 0.5 л
+                      Glenfiddich 12 Years Old, 0.5&nbsp;л
                     </h3>
-                    <p class="product__count">3 шт.</p>
+                    <p class="product__count">197 шт.</p>
                     <p class="product__category">Виски</p>
                     <p class="product__country">Шотландия</p>
                     <p class="product__price">
                       3350
                       <span> руб.</span>
                     </p>
-                    <button class="product__button">В корзину</button>
+                    <button class="product__button primary-button">
+                      В корзину
+                    </button>
                   </div>
                 </a>
               </div>
@@ -217,16 +250,18 @@
                   />
                   <div class="product__description">
                     <h3 class="product__title">
-                      Glenfiddich 12 Years Old, 0.5 л
+                      Glenfiddich 12 Years Old, 0.5&nbsp;л
                     </h3>
-                    <p class="product__count">3 шт.</p>
+                    <p class="product__count">197 шт.</p>
                     <p class="product__category">Виски</p>
                     <p class="product__country">Шотландия</p>
                     <p class="product__price">
                       3350
                       <span> руб.</span>
                     </p>
-                    <button class="product__button">В корзину</button>
+                    <button class="product__button primary-button">
+                      В корзину
+                    </button>
                   </div>
                 </a>
               </div>
@@ -239,16 +274,18 @@
                   />
                   <div class="product__description">
                     <h3 class="product__title">
-                      Glenfiddich 12 Years Old, 0.5 л
+                      Glenfiddich 12 Years Old, 0.5&nbsp;л
                     </h3>
-                    <p class="product__count">3 шт.</p>
+                    <p class="product__count">197 шт.</p>
                     <p class="product__category">Виски</p>
                     <p class="product__country">Шотландия</p>
                     <p class="product__price">
                       3350
                       <span> руб.</span>
                     </p>
-                    <button class="product__button">В корзину</button>
+                    <button class="product__button primary-button">
+                      В корзину
+                    </button>
                   </div>
                 </a>
               </div>
@@ -261,16 +298,18 @@
                   />
                   <div class="product__description">
                     <h3 class="product__title">
-                      Glenfiddich 12 Years Old, 0.5 л
+                      Glenfiddich 12 Years Old, 0.5&nbsp;л
                     </h3>
-                    <p class="product__count">3 шт.</p>
+                    <p class="product__count">197 шт.</p>
                     <p class="product__category">Виски</p>
                     <p class="product__country">Шотландия</p>
                     <p class="product__price">
                       3350
                       <span> руб.</span>
                     </p>
-                    <button class="product__button">В корзину</button>
+                    <button class="product__button primary-button">
+                      В корзину
+                    </button>
                   </div>
                 </a>
               </div>
@@ -283,16 +322,18 @@
                   />
                   <div class="product__description">
                     <h3 class="product__title">
-                      Glenfiddich 12 Years Old, 0.5 л
+                      Glenfiddich 12 Years Old, 0.5&nbsp;л
                     </h3>
-                    <p class="product__count">3 шт.</p>
+                    <p class="product__count">197 шт.</p>
                     <p class="product__category">Виски</p>
                     <p class="product__country">Шотландия</p>
                     <p class="product__price">
                       3350
                       <span> руб.</span>
                     </p>
-                    <button class="product__button">В корзину</button>
+                    <button class="product__button primary-button">
+                      В корзину
+                    </button>
                   </div>
                 </a>
               </div>
@@ -305,16 +346,18 @@
                   />
                   <div class="product__description">
                     <h3 class="product__title">
-                      Glenfiddich 12 Years Old, 0.5 л
+                      Glenfiddich 12 Years Old, 0.5&nbsp;л
                     </h3>
-                    <p class="product__count">3 шт.</p>
+                    <p class="product__count">197 шт.</p>
                     <p class="product__category">Виски</p>
                     <p class="product__country">Шотландия</p>
                     <p class="product__price">
                       3350
                       <span> руб.</span>
                     </p>
-                    <button class="product__button">В корзину</button>
+                    <button class="product__button primary-button">
+                      В корзину
+                    </button>
                   </div>
                 </a>
               </div>
@@ -327,16 +370,18 @@
                   />
                   <div class="product__description">
                     <h3 class="product__title">
-                      Glenfiddich 12 Years Old, 0.5 л
+                      Glenfiddich 12 Years Old, 0.5&nbsp;л
                     </h3>
-                    <p class="product__count">3 шт.</p>
+                    <p class="product__count">197 шт.</p>
                     <p class="product__category">Виски</p>
                     <p class="product__country">Шотландия</p>
                     <p class="product__price">
                       3350
                       <span> руб.</span>
                     </p>
-                    <button class="product__button">В корзину</button>
+                    <button class="product__button primary-button">
+                      В корзину
+                    </button>
                   </div>
                 </a>
               </div>
@@ -349,16 +394,18 @@
                   />
                   <div class="product__description">
                     <h3 class="product__title">
-                      Glenfiddich 12 Years Old, 0.5 л
+                      Glenfiddich 12 Years Old, 0.5&nbsp;л
                     </h3>
-                    <p class="product__count">3 шт.</p>
+                    <p class="product__count">197 шт.</p>
                     <p class="product__category">Виски</p>
                     <p class="product__country">Шотландия</p>
                     <p class="product__price">
                       3350
                       <span> руб.</span>
                     </p>
-                    <button class="product__button">В корзину</button>
+                    <button class="product__button primary-button">
+                      В корзину
+                    </button>
                   </div>
                 </a>
               </div>
@@ -437,5 +484,104 @@
         </div>
       </div>
     </footer>
+    <div class="login-overlay">
+      <div class="login-form">
+        <div class="login-form__toggle"></div>
+        <div class="login-form__panel one">
+          <div class="login-form__header">
+            <h1>Войти в аккаунт</h1>
+          </div>
+          <div class="login-form__content">
+            <form>
+              <div class="login-form__group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="password">Пароль</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label class="login-form__remember">
+                  <input type="checkbox" />Запомнить меня?</label
+                ><a class="login-form__recovery" href="#">Забыли пароль?</a>
+              </div>
+              <div class="login-form__group">
+                <button type="submit">Войти</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="login-form__panel two">
+          <div class="login-form__header">
+            <h1>Зарегистрироваться</h1>
+          </div>
+          <div class="login-form__content">
+            <form>
+              <div class="login-form__group">
+                <label for="username">Имя</label>
+                <input
+                  type="text"
+                  id="username"
+                  name="username"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="birthdate">Email</label>
+                <input
+                  type="date"
+                  id="birthdate"
+                  name="birthdate"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="registeremail"
+                  name="email"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="password">Пароль</label>
+                <input
+                  type="password"
+                  id="registerPassword"
+                  name="password"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <label for="cpassword">Подтвердить пароль</label>
+                <input
+                  type="password"
+                  id="cpassword"
+                  name="cpassword"
+                  required="required"
+                />
+              </div>
+              <div class="login-form__group">
+                <button type="submit">Зарегистрироваться</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../main.js"></script>
+    <script src="../login.js"></script>
   </body>
 </html>
