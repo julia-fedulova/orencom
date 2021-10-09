@@ -39,6 +39,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .wrap {
+    padding: 0 20px;
+  }
+}
+
 .primary-button {
   font-family: "Oswald", sans-serif;
   font-size: 22px;
@@ -100,6 +106,10 @@ body {
   height: 1px;
   margin: -1px;
   opacity: 0;
+}
+
+.header__logo {
+  z-index: 10;
 }
 
 .header__search form {
@@ -193,6 +203,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 10;
 }
 
 .header__link {
@@ -388,6 +399,44 @@ body {
   border-bottom: 1px #000 solid;
 }
 
+.burger-menu {
+  position: fixed;
+  font-size: 21px;
+  text-align: center;
+  background-color: #ecf2f0;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0 100px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  text-align: start;
+}
+
+@media (max-width: 480px) {
+  .burger-menu {
+    padding: 0 45px;
+  }
+}
+
+.burger-menu.active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
 .burger-menu__button {
   display: none;
   font-family: "Oswald", sans-serif;
@@ -412,7 +461,33 @@ body {
 }
 
 .burger-menu__list {
-  display: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 75%;
+  width: 75%;
+}
+
+.burger-menu__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.burger-menu__close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  color: #005b42;
+  font-size: 28px;
 }
 
 .page-section {
@@ -682,6 +757,18 @@ body {
   }
 }
 
+@media (max-width: 1279px) {
+  .product__button {
+    padding: 7px 39px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .product__button {
+    padding: 7px 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .product__button {
     padding: 5px 25px;
@@ -690,7 +777,7 @@ body {
 
 @media (max-width: 480px) {
   .product__button {
-    padding: 7px 72px;
+    padding: 7px 50px;
   }
 }
 

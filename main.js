@@ -33,3 +33,15 @@ buttonNo.addEventListener("click", (event) => {
         stopPopup.classList.add("open");
     }, 350);
 }); */
+
+const burgerButton = document.querySelector(".burger-menu__button")
+let closeButton = document.querySelector(".burger-menu__close-button");
+let burgerMenu = document.querySelector(".burger-menu");
+
+burgerButton.onclick = function () {
+    burgerMenu.classList.add("active");
+};
+closeButton.onclick = function () {
+    burgerMenu.classList.remove("active");
+};
+
