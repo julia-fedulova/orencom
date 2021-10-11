@@ -22,6 +22,9 @@ buttonYes.addEventListener("click", (event) => {
     setTimeout(function () {
         confirmOverlay.classList.remove("open");
         confirmPopup.classList.remove("open");
+        setTimeout(function () {
+            confirmOverlay.style.display = "none";
+        }, 350);
     }, 350);
 });
       
