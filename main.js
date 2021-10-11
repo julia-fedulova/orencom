@@ -8,7 +8,7 @@ const confirmPopup = document.querySelector(".confirm-popup");
 const stopPopup = document.querySelector(".stop-popup");
 
 
-/*setTimeout(function () {
+setTimeout(function () {
     confirmOverlay.style.display = "block";
         setTimeout(function () {
             confirmOverlay.classList.add("open");
@@ -32,7 +32,7 @@ buttonNo.addEventListener("click", (event) => {
     setTimeout(function () {
         stopPopup.classList.add("open");
     }, 350);
-}); */
+});
 
 const burgerButton = document.querySelector(".burger-menu__button")
 let closeButton = document.querySelector(".burger-menu__close-button");

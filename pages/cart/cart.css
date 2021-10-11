@@ -104,11 +104,19 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #dbdbdb;
   min-height: 200px;
+  padding: 10px;
+}
+
+@media (max-width: 480px) {
+  .product {
+    min-height: 185px;
+  }
 }
 
 .product:last-child {
@@ -118,6 +126,12 @@
 .product__img {
   display: block;
   width: 150px;
+}
+
+@media (max-width: 480px) {
+  .product__img {
+    width: 35%;
+  }
 }
 
 .product__description {
@@ -139,10 +153,25 @@
   }
 }
 
+@media (max-width: 480px) {
+  .product__description {
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+  }
+}
+
 .product__title {
   font-size: 28px;
+  line-height: 32px;
   font-weight: 400;
   margin: 0 0 3px;
+}
+
+@media (max-width: 480px) {
+  .product__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
 
 .product__title a {
@@ -192,10 +221,47 @@
   }
 }
 
+@media (max-width: 580px) {
+  .product__button {
+    padding: 7px 25px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product__button {
+    display: none;
+  }
+}
+
 .product__button:hover {
   background-color: transparent;
   border: 1px solid #000;
   color: #000;
+}
+
+.product__button-close {
+  display: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  opacity: 0.6;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media (max-width: 480px) {
+  .product__button-close {
+    display: block;
+  }
+}
+
+.product__button-close:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .product__amount {
@@ -257,6 +323,15 @@
   margin-bottom: 5px;
 }
 
+@media (max-width: 480px) {
+  .total__promo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .total__promo input {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
@@ -275,6 +350,14 @@
   padding: 4px 9px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+@media (max-width: 480px) {
+  .total__promo-button {
+    border: 1px solid #000;
+    border-top: none;
+    font-size: 18px;
+  }
 }
 
 .total__promo-button:hover {

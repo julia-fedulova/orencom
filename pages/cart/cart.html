@@ -19,6 +19,7 @@
       integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon" />
     <title>Корзина</title>
   </head>
   <body>
@@ -273,6 +274,9 @@
                   </div>
                 </div>
                 <button class="product__button primary-button">Удалить</button>
+                <button type="button" class="product__button-close">
+                  <i class="fas fa-times"></i>
+                </button>
               </div>
               <div class="cart__card product">
                 <img class="product__img" src="../../assets/image.png" alt="" />
@@ -293,6 +297,9 @@
                   </div>
                 </div>
                 <button class="product__button primary-button">Удалить</button>
+                <button type="button" class="product__button-close">
+                  <i class="fas fa-times"></i>
+                </button>
               </div>
               <div class="cart__card product">
                 <img class="product__img" src="../../assets/image.png" alt="" />
@@ -313,6 +320,9 @@
                   </div>
                 </div>
                 <button class="product__button primary-button">Удалить</button>
+                <button type="button" class="product__button-close">
+                  <i class="fas fa-times"></i>
+                </button>
               </div>
             </div>
             <div class="cart__total total">
@@ -443,7 +453,7 @@
                 ><a class="login-form__recovery" href="#">Забыли пароль?</a>
               </div>
               <div class="login-form__group">
-                <button type="submit">Войти</button>
+                <button type="submit" class="primary-button">Войти</button>
               </div>
             </form>
           </div>
@@ -500,7 +510,9 @@
                 />
               </div>
               <div class="login-form__group">
-                <button type="submit">Зарегистрироваться</button>
+                <button type="submit" class="primary-button">
+                  Зарегистрироваться
+                </button>
               </div>
             </form>
           </div>

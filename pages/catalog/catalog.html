@@ -19,6 +19,7 @@
       integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="../../assets/favicon.ico" type="image/x-icon" />
     <title>Корзина</title>
   </head>
   <body>
@@ -264,8 +265,21 @@
               <option value="name">Названию</option>
             </select>
           </div>
-          <div>
-            <button><i class="fas fa-filter"></i>Фильтр</button>
+          <div class="dropdown-filters">
+            <button class="dropdown-filters__button">
+              <i class="fas fa-filter"></i>Фильтр
+            </button>
+            <div class="dropdown-filters__content">
+              <form class="filters__form" action="">
+                <p>Цена</p>
+                <p>Объем</p>
+                <p>Производитель</p>
+                <p>Страна</p>
+                <button type="button" class="primary-button filters__button">
+                  Показать
+                </button>
+              </form>
+            </div>
           </div>
           <div class="catalog__container">
             <div class="catalog__filters filters">
@@ -628,7 +642,7 @@
                 ><a class="login-form__recovery" href="#">Забыли пароль?</a>
               </div>
               <div class="login-form__group">
-                <button type="submit">Войти</button>
+                <button type="submit" class="primary-button">Войти</button>
               </div>
             </form>
           </div>
@@ -685,7 +699,9 @@
                 />
               </div>
               <div class="login-form__group">
-                <button type="submit">Зарегистрироваться</button>
+                <button type="submit" class="primary-button">
+                  Зарегистрироваться
+                </button>
               </div>
             </form>
           </div>

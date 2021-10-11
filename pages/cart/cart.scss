@@ -69,15 +69,23 @@ $pistachio: #d2e4d6;
 
 .product {
   display: flex;
+  position: relative;
   align-items: center;
   border-bottom: 1px solid #dbdbdb;
   min-height: 200px;
+  padding: 10px;
+  @media (max-width: 480px) {
+    min-height: 185px;
+  }
   &:last-child {
     border-bottom: none;
   }
   &__img {
     display: block;
     width: 150px;
+    @media (max-width: 480px) {
+      width: 35%;
+    }
   }
   &__description {
     flex-basis: 45%;
@@ -87,11 +95,19 @@ $pistachio: #d2e4d6;
     @media (max-width: 1023px) {
       flex-basis: 50%;
     }
+    @media (max-width: 480px) {
+      flex-basis: 55%;
+    }
   }
   &__title {
     font-size: 28px;
+    line-height: 32px;
     font-weight: 400;
     margin: 0 0 3px;
+    @media (max-width: 480px) {
+      font-size: 22px;
+      line-height: 24px;
+    }
     a {
       text-decoration: none;
       color: $green;
@@ -124,10 +140,35 @@ $pistachio: #d2e4d6;
     @media (max-width: 768px) {
       margin: 0 15px;
     }
+    @media (max-width: 580px) {
+      padding: 7px 25px;
+      margin: 0 10px;
+    }
+    @media (max-width: 480px) {
+      display: none;
+    }
     &:hover {
       background-color: transparent;
       border: 1px solid #000;
       color: #000;
+    }
+    &-close {
+      display: none;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      opacity: 0.6;
+      transition: 0.4s;
+      @media (max-width: 480px) {
+        display: block;
+      }
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
     }
   }
   &__amount {
@@ -181,6 +222,9 @@ $pistachio: #d2e4d6;
   &__promo {
     display: flex;
     margin-bottom: 5px;
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
     input {
       font-family: "Oswald", sans-serif;
       font-size: 20px;
@@ -197,6 +241,11 @@ $pistachio: #d2e4d6;
       border-left: none;
       padding: 4px 9px;
       transition: 0.4s;
+      @media (max-width: 480px) {
+        border: 1px solid #000;
+        border-top: none;
+        font-size: 18px;
+      }
       &:hover {
         background-color: transparent;
       }

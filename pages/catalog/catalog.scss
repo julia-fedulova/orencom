@@ -53,6 +53,29 @@ $pistachio: #d2e4d6;
   }
 }
 
+.dropdown-filters {
+  display: none;
+  margin-bottom: 10px;
+  @media (max-width: 1023px) {
+    display: block;
+  }
+  &__button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    color: #005b42;
+    text-transform: uppercase;
+  }
+  &__content {
+    display: none;
+  }
+  &:hover .dropdown-filters__content {
+    display: block;
+  }
+}
+
 .primary-select {
   font-family: "Oswald", sans-serif;
   font-weight: 300;

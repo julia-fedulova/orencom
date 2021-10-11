@@ -40,6 +40,9 @@ body {
   @media (max-width: 768px) {
     padding: 0 20px;
   }
+  @media (max-width: 480x) {
+    padding: 0 15px;
+  }
 }
 
 .primary-button {
@@ -77,6 +80,9 @@ body {
   display: block;
   max-width: 75%;
   height: auto;
+  @media (max-width: 768px) {
+    max-width: 80%;
+  }
 }
 
 .header {
@@ -91,6 +97,12 @@ body {
   }
   &__logo {
     z-index: 10;
+    @media (max-width: 768px) {
+      flex-basis: 35%;
+    }
+    @media (max-width: 480px) {
+      flex-basis: 45%;
+    }
   }
   &__search {
     form {
@@ -212,6 +224,7 @@ body {
     ul li:hover .nav-list__submenu {
       visibility: visible;
       opacity: 1;
+      z-index: 10;
     }
   }
 }
@@ -226,6 +239,7 @@ body {
   }
   &__dropdown-menu {
     color: $green;
+    z-index: 10;
     //border-bottom: 2px solid transparent;
     &:before {
       content: "\f0c9";
@@ -310,7 +324,7 @@ body {
 
 .burger-menu {
   position: fixed;
-  font-size: 21px;
+  font-size: 30px;
   text-align: center;
   background-color: #ecf2f0;
   left: 0;
@@ -321,11 +335,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 100px;
+  padding: 0 55px;
   transition: 0.7s;
   transform: translateY(-150%);
   text-align: start;
   @media (max-width: 480px) {
+    font-size: 21px;
     padding: 0 45px;
   }
   &.active {
@@ -353,7 +368,10 @@ body {
     flex-direction: column;
     justify-content: space-around;
     height: 75%;
-    width: 75%;
+    width: 85%;
+    @media (max-width: 480px) {
+      width: 77%;
+    }
   }
   &__link {
     color: #000;
@@ -366,7 +384,10 @@ body {
     background-color: transparent;
     border: none;
     color: $green;
-    font-size: 28px;
+    font-size: 30px;
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -738,6 +759,10 @@ body {
   animation: fade 0.6s;
   opacity: 0;
   transition: 0.35s ease-in-out;
+  @media (max-width: 480px) {
+    min-width: 265px;
+    padding: 20px 15px;
+  }
   &.open {
     opacity: 1;
   }
@@ -749,11 +774,17 @@ body {
     @media (max-width: 1599px) {
       font-size: 34px;
     }
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
   }
   &__text {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 24px;
     font-weight: 300;
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
   }
   &__button-group {
     display: flex;
@@ -765,6 +796,11 @@ body {
   &__button {
     padding: 7px 40px;
     margin: 30px 30px 0;
+    @media (max-width: 480px) {
+      font-size: 18px;
+      padding: 5px 30px;
+      margin: 15px 30px 0;
+    }
     &_red {
       color: #b80000;
       &:hover {
